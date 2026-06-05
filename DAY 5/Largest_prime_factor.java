@@ -23,3 +23,4 @@ public class Largest_prime_factor {
         sc.close();
     }
 }
+
