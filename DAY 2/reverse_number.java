@@ -5,11 +5,17 @@ public class reverse_number {
         System.out.println("enter the number:");
         int num=sc.nextInt();
         int reverse=0; int digit;
+        int sign= 1;
+        if(num<0){
+            sign= -1;
+            num=-num //create absolute value of given number
+        }       
         while(num>0){
             digit=num%10; //extract last digit
             reverse = reverse*10 + digit;
             num/=10;
         }
+        reverse= reverse * sign
         System.out.println("Reversed Number: " + reverse);  
         sc.close();
     }   
