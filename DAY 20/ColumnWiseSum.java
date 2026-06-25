@@ -22,7 +22,7 @@ public class ColumnWiseSum {
             for(int i=0;i<r;i++){
                 sum+=a[i][j];
             }
-            System.out.println("Sum of Row " + (j+1) + " = " + sum);
+            System.out.println("Sum of Column " + (j+1) + " = " + sum);
         }
         sc.close();
     }
